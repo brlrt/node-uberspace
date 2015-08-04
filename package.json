@@ -1,0 +1,40 @@
+{
+  "name": "uberspace",
+  "description": "create markdown file with all related info/snippets for uberspace account",
+  "version": "0.1.0",
+  "homepage": "https://github.com/solygen/node-uberspace",
+  "author": "Frank Paczynski (https://github.com/solygen)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/solygen/node-uberspace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/solygen/node-uberspace/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/solygen/node-uberspace/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "command line"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "uber": "./bin/uber.js"
+  },
+  "main": "./bin/uber.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "minimist": "~0.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "UNLICENSE"
+}
