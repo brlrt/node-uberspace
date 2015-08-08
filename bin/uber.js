@@ -2,13 +2,11 @@
 
 var fs = require('fs');
 var os = require('os');
-var path = require('path');
 var argv = require('minimist')(process.argv.slice(2));
 
 /**
  * Everything in the file should be customized
  */
-
 
 // Use `-d` or `--domain` to specify the domain
 var domain = argv._[0] || argv.d || argv.domain;
@@ -48,9 +46,10 @@ if(!fs.existsSync(file)) {
 var content = '';
 
 function add (text) {
-    if (text)
+    if (text) {
         content = content.concat(text);
-    content = content.concat(os.EOL)
+    }
+    content = content.concat(os.EOL);
 }
 
 function write () {
