@@ -24,15 +24,15 @@ var file  = argv._[3] || argv.f || argv.file || domain + '.md';
 
 
 if (!domain) {
-  log.error('Please provide a domain (hampelmann.de), either as a first argument or with `-d`');
+  console.log('Please provide a domain (hampelmann.de), either as a first argument or with `-d`');
 }
 
 if (!user) {
-  log.error('Please provide a user (hampel), either as a second argument or with `-u`');
+  console.log('Please provide a user (hampel), either as a second argument or with `-u`');
 }
 
 if (!server) {
-  log.error('Please provide a server (e.g. hampelmann.uberspace.de), either as a third argument or with `-s`');
+  console.log('Please provide a server (e.g. hampelmann.uberspace.de), either as a third argument or with `-s`');
 }
 
 
@@ -107,7 +107,7 @@ add();
 
 add('### symlink');
 add('```');
-add('ln -s /var/www/virtual/' + user + '/' + domain + ' /var/www/virtual/crosso/www.' + domain);
+add('ln -s /var/www/virtual/' + user + '/' + domain + ' /var/www/virtual/' + user + '/www.' + domain);
 add('```');
 add();
 
